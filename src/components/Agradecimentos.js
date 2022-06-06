@@ -64,6 +64,7 @@ export default function Agradecimentos() {
 const Arrow = styled.div`
   position: fixed;
   bottom: 5px;
+  left: 40px;
 
   img {
     height: 40px !important;
@@ -106,7 +107,7 @@ const Container = styled.div`
 
   h1 {
     font-family: bossBaby;
-    font-size: 28px;
+    font-size: 25px;
     font-weight: bold;
     color: #ffffff;
   }
