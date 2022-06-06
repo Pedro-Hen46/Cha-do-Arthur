@@ -1,5 +1,18 @@
 * {
     box-sizing: border-box;
     text-decoration: none;
+    
+}
+body{
     background-color: black;
+}
+@font-face {
+    font-family: bossBaby;
+    src: url(Boss\ Baby.otf);
+}
+
+
+@font-face {
+    font-family: childWriting;
+    src: url(ChildWriting-Regular\ 2.ttf);
 }
