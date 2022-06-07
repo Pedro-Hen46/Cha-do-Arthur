@@ -10,6 +10,9 @@ export default function MenuPage() {
   function goToAgradecimentos() {
     navigate("/agradecimentos");
   }
+  function goToRifinha(){
+    navigate("/rifa")
+}
 
   return (
     <ContainerMenu>
@@ -26,7 +29,7 @@ export default function MenuPage() {
         </h4>
       </Legenda>
       <button>MINHAS FOTINHAS</button>
-      <button>RIFINHA DO ARTHUR</button>
+      <button onClick={() => goToRifinha()}>RIFINHA DO ARTHUR</button>
       <button>ENDEREÇO DO LOCAL</button>
       <button onClick={() => goToAgradecimentos()}>AGRADECIMENTOS</button>
       <div>
