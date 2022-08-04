@@ -26,7 +26,7 @@ export default function HomePage() {
       </h4>
       <div>
         <img src={bebezin} alt="Arthur Poderoso" height="220px" />
-        <button onClick={() => goToMenu()}>COORDENAS DO PLANO!</button>
+        <button onClick={() => goToMenu()}>COORDENADAS DO PLANO!</button>
       </div>
     </Container>
   );
