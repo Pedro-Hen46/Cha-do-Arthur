@@ -43,7 +43,13 @@ export default function MenuPage() {
 }
 const Legenda = styled.div`
   display: flex;
+  width: 100%;
+  
   margin-top: 2px;
+
+  h4{
+    margin-right: 20px;
+  }
 `;
 
 const ContainerMenu = styled.div`
