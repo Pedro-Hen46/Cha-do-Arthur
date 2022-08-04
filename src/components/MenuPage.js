@@ -10,8 +10,9 @@ export default function MenuPage() {
   function goToAgradecimentos() {
     navigate("/agradecimentos");
   }
-  function goToRifinha() {
-    navigate("/rifa");
+  function goToGalleyImages(){
+    navigate("/galeria");
+
   }
 
   return (
@@ -22,15 +23,30 @@ export default function MenuPage() {
           <strong>LOCAL: </strong>CASA DA VÓVÓ CAMILA
         </h4>
         <h4>
-          <strong>DATA: </strong>10/JULHO
+          <strong>DATA: </strong>21/AGOSTO
         </h4>
         <h4>
-          <strong>HORÁRIO: </strong>11:30H
+          <strong>HORÁRIO: </strong>13:00H
         </h4>
       </Legenda>
-      <button>GALERIA DE FOTOS</button>
+      <button onClick={() => goToGalleyImages()}>GALERIA DE FOTOS</button>
       <button>O QUE LEVAR NO DIA?</button>
-      <button>ENDEREÇO DO LOCAL</button>
+
+      <button><a
+          href="https://www.google.com.br/maps/place/22%C2%B003'57.3%22S+51%C2%B025'13.0%22W/@-22.0659169,-51.4211737,18z/data=!3m1!4b1!4m6!3m5!1s0x0:0x7b17a27d348ce771!7e2!8m2!3d-22.065919!4d-51.4202656?shorturl=1"
+          target="_blank" rel="noreferrer"
+        >
+          ENDEREÇO DO LOCAL
+        </a></button>
+
+      <button>
+        <a
+          href="https://calendar.google.com/event?action=TEMPLATE&tmeid=NmxrN3M0ZHZjcDJ0Z3Z0MzAzcTQ3dWJwajUgbTU4M2luYXF2dnExanQ0dDM3dnYyNW5mcjhAZw&tmsrc=m583inaqvvq1jt4t37vv25nfr8%40group.calendar.google.com"
+          target="_blank" rel="noreferrer"
+        >
+          ADICIONE NA SUA AGENDA
+        </a>
+      </button>
       <button onClick={() => goToAgradecimentos()}>AGRADECIMENTOS</button>
       <div>
         <img src={footer} alt="Logo Header" />
@@ -44,10 +60,10 @@ export default function MenuPage() {
 const Legenda = styled.div`
   display: flex;
   width: 100%;
-  
+
   margin-top: 2px;
 
-  h4{
+  h4 {
     margin-right: 20px;
   }
 `;
@@ -64,6 +80,13 @@ const ContainerMenu = styled.div`
   @media (max-width: 750px) {
     display: flex;
     justify-content: flex-start;
+  }
+  a{
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 20px;
+    color: #ffffff;
+    text-decoration: none;
   }
 
   div {

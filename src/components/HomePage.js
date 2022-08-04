@@ -32,7 +32,7 @@ export default function HomePage() {
 
 const Container = styled.div`
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   flex-direction: column;
   width: 100%;
