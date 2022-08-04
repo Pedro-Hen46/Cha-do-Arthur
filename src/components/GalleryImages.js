@@ -26,7 +26,7 @@ export default function GalleryImages() {
 
       <h5>
         "Tudo começou com minha mãe passando muito enjoo, então decidiram fazer
-        o teste de farmácia, foi ai que souberam que o chefinho estava a caminha..."
+        o teste de farmácia, foi ai que souberam que o chefinho estava a caminho..."
       </h5>
       <img className="galeria1" src={pezinho} alt="Logo Header" />
 
