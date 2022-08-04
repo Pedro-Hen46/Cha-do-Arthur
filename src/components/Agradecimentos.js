@@ -16,8 +16,7 @@ export default function Agradecimentos() {
     <Container>
       <h1>AGRADECIMENTOS ESPECIAIS</h1>
       <img src={Header} alt="Logo Header" />
-
-      <span>Se voce recebeu este convite saiba que: </span>
+      <br />
 
       <h4>VÓVÓ CAMILA E VOVÔ NILSON</h4>
       <h5>
@@ -29,8 +28,7 @@ export default function Agradecimentos() {
       <h4>VÓVÓ DAIANE E VOVÔ LUIZ H.</h4>
       <h5>
         OBRIGADO POR TODAS AS DICAS E EXPERIÊNCIAS PASSADAS PARA MEUS PAPAIS.
-        NÃO VEJO A HORA DE ESTAR ENTRE VOCÊS GRITANDO E PULANDO NA CAMA DE
-        VOCÊS.
+        NÃO VEJO A HORA DE ESTAR ENTRE VOCÊS GRITANDO E PULANDO NA CAMA.
       </h5>
       <h4>TIA PAMELA E TIO GUSTAVO</h4>
       <h5>
@@ -39,21 +37,28 @@ export default function Agradecimentos() {
         JUNTOS... BEIJINHOS PRA VCS.
       </h5>
 
+      <h4>TIA CARLA E TIO NETO</h4>
+      <h5>
+        MEUS PAPAIS ESTÃO DEVENDO UM CONVITE PARA VCS CONHECER NOSSO LAR, MAS JÁ
+        COBREI E ELES DISSERAM QUE JA JA SERÁ FEITO O CONVITE, ESTAMOS NA ETAPA
+        FINAL.
+      </h5>
+
       <h4>A TODOS QUE FIZERAM PARTE DISSO</h4>
       <h5>
         SÃO MUITAS PESSOAS E NÃO CONSIGO ME LEMBRAR DE TODOS, AFINAL AINDA SOU
         UM BÊBÊ. MAS GOSTARIA DE AGRADECER A TODOS QUE DE ALGUMA FORMA LEMBRARAM
         DE MIM E AJUDARAM OS MEUS PAIS A TRAZER O BEBE MAIS LINDO DESSE MUNDO.
       </h5>
-      <Arrow>
-        <img src={arrow} alt="Descer pagina" />
+      <Arrow onClick={() => backToMenu()}>
+        <ion-icon name="arrow-back"></ion-icon>
       </Arrow>
       <Footer>
         <img src={bebezin} alt="Logo Header" />
         <div>
           <span>
-            "A alegria da minha chegada já começa com a união de todos que eu amo
-            na minha festinha de chá de bebê."
+            "A alegria da minha chegada já começa com a união de todos que eu
+            amo na minha festinha de chá de bebê."
           </span>
           <h6>COM AMOR E CARINHO, ARTHUR.</h6>
         </div>
@@ -62,13 +67,27 @@ export default function Agradecimentos() {
   );
 }
 const Arrow = styled.div`
+  background-color: white;
+  z-index: 1;
+  width: 40px;
+  height: 40px;
   position: fixed;
-  bottom: 5px;
-  left: 40px;
+  top: 10px;
+  left: 6px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  img {
-    height: 40px !important;
-    fill: white;
+  ion-icon {
+    font-size: 26px;
+    color: rgba(0, 212, 255, 1);
+  }
+  transition: 0.2s linear;
+  :hover {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
   }
 `;
 
@@ -107,7 +126,8 @@ const Container = styled.div`
 
   h1 {
     font-family: bossBaby;
-    font-size: 25px;
+    font-size: 20px;
+    text-align: center;
     font-weight: bold;
     color: #ffffff;
   }
@@ -127,10 +147,10 @@ const Container = styled.div`
     margin-bottom: 30px;
   }
   span {
-      font-family: "Montserrat";
-      font-size: 18px;
-      font-weight: 200;
-      margin-bottom: 10px;
+    font-family: "Montserrat";
+    font-size: 18px;
+    font-weight: 200;
+    margin-bottom: 10px;
     color: white;
   }
 `;
