@@ -10,9 +10,11 @@ export default function MenuPage() {
   function goToAgradecimentos() {
     navigate("/agradecimentos");
   }
-  function goToGalleyImages(){
+  function goToGalleyImages() {
     navigate("/galeria");
-
+  }
+  function goToProducts() {
+    navigate("/products");
   }
 
   return (
@@ -30,28 +32,29 @@ export default function MenuPage() {
         </h4>
       </Legenda>
       <button onClick={() => goToGalleyImages()}>GALERIA DE FOTOS</button>
-      <button>O QUE LEVAR NO DIA?</button>
+      <button onClick={() => goToProducts()}>O QUE LEVAR NO DIA?</button>
 
-      <button><a
-          href="https://www.google.com.br/maps/place/22%C2%B003'57.3%22S+51%C2%B025'13.0%22W/@-22.0659169,-51.4211737,18z/data=!3m1!4b1!4m6!3m5!1s0x0:0x7b17a27d348ce771!7e2!8m2!3d-22.065919!4d-51.4202656?shorturl=1"
-          target="_blank" rel="noreferrer"
-        >
-          ENDEREÇO DO LOCAL
-        </a></button>
+      <a
+        href="https://www.google.com.br/maps/place/22%C2%B003'57.3%22S+51%C2%B025'13.0%22W/@-22.0659169,-51.4211737,18z/data=!3m1!4b1!4m6!3m5!1s0x0:0x7b17a27d348ce771!7e2!8m2!3d-22.065919!4d-51.4202656?shorturl=1"
+        target="_blank"
+        rel="noreferrer"
+      >
+        ENDEREÇO DO LOCAL
+      </a>
 
-      <button>
-        <a
-          href="https://calendar.google.com/event?action=TEMPLATE&tmeid=NmxrN3M0ZHZjcDJ0Z3Z0MzAzcTQ3dWJwajUgbTU4M2luYXF2dnExanQ0dDM3dnYyNW5mcjhAZw&tmsrc=m583inaqvvq1jt4t37vv25nfr8%40group.calendar.google.com"
-          target="_blank" rel="noreferrer"
-        >
-          ADICIONE NA SUA AGENDA
-        </a>
-      </button>
+      <a
+        href="https://calendar.google.com/event?action=TEMPLATE&tmeid=NmxrN3M0ZHZjcDJ0Z3Z0MzAzcTQ3dWJwajUgbTU4M2luYXF2dnExanQ0dDM3dnYyNW5mcjhAZw&tmsrc=m583inaqvvq1jt4t37vv25nfr8%40group.calendar.google.com"
+        target="_blank"
+        rel="noreferrer"
+      >
+        COLOCAR NA AGENDA
+      </a>
+
       <button onClick={() => goToAgradecimentos()}>AGRADECIMENTOS</button>
       <div>
         <img src={footer} alt="Logo Header" />
         <span>
-          Sou um bebe super tecnologico, clique na opcao que você deseja...
+          Sou um bebe super tecnologico, clique na opcao que voce deseja...
         </span>
       </div>
     </ContainerMenu>
@@ -77,11 +80,35 @@ const ContainerMenu = styled.div`
   height: 100vh;
   padding: 3rem;
 
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 60px;
+    height: 80px;
+    color: #ffffff;
+    margin-top: 20px;
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 20px;
+    border: thin solid #00aeff;
+    border-radius: 5px;
+    background-image: linear-gradient(#1c556d, #10242b);
+
+    transition: 0.2s linear;
+    :hover {
+      box-shadow: 0px 0px 20px #00aeff;
+      cursor: pointer;
+      font-weight: 600;
+    }
+  }
+
   @media (max-width: 750px) {
     display: flex;
     justify-content: flex-start;
   }
-  a{
+  a {
     font-family: "Montserrat";
     font-weight: 400;
     font-size: 20px;

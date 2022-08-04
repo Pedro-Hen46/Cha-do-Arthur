@@ -24,23 +24,38 @@ export default function HomePage() {
         Mas para isto acontecer preciso da sua ajuda. Irei passar as coordenadas
         de como vc pode me ajudar.
       </h4>
-      <img src={bebezin} alt="Arthur Poderoso" height="220px" />
-      <button onClick={() => goToMenu()}>COORDENAS DO PLANO!</button>
+      <div>
+        <img src={bebezin} alt="Arthur Poderoso" height="220px" />
+        <button onClick={() => goToMenu()}>COORDENAS DO PLANO!</button>
+      </div>
     </Container>
   );
 }
 
 const Container = styled.div`
   display: flex;
-  justify-content: space-between;
   align-items: center;
   flex-direction: column;
   width: 100%;
   height: 100vh;
   padding: 2rem;
 
+  div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+    margin-top: 30px;
+    img{
+      margin-bottom: -2px;
+      width: 100%;
+      height: 150px !important;
+      object-fit: contain !important;
+    }
+  }
   button {
-    margin-bottom: 20px;
     min-width: 95%;
     min-height: 70px;
     border-radius: 10px;

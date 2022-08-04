@@ -2,7 +2,6 @@ import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
 
 import bebezin from "../images/agradecimento.png";
-import arrow from "../images/down-arrow.png";
 import Header from "../images/header.png";
 
 export default function Agradecimentos() {
@@ -39,7 +38,7 @@ export default function Agradecimentos() {
 
       <h4>TIA CARLA E TIO NETO</h4>
       <h5>
-        MEUS PAPAIS ESTÃO DEVENDO UM CONVITE PARA VCS CONHECER NOSSO LAR, MAS JÁ
+        MEUS PAPAIS ESTÃO DEVENDO UM CONVITE PARA VCS CONHECEREM NOSSO LAR, MAS JÁ
         COBREI E ELES DISSERAM QUE JA JA SERÁ FEITO O CONVITE, ESTAMOS NA ETAPA
         FINAL.
       </h5>

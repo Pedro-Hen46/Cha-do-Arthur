@@ -1,16 +1,11 @@
 import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
 
-import bebezin from "../images/bebezin.png";
-import pezinho from "../images/sapatinho.png";
-import hcg from "../images/hcg.png";
+import pezinho from "../images/OqueLevar.png";
 import Header from "../images/header.png";
-import ultrassom from "../images/1ultrassom.png";
-import ultrassom2 from "../images/2ultrassom.png";
-import agradecimento from "../images/final.png";
 
 
-export default function GalleryImages() {
+export default function Products() {
   const navigate = useNavigate();
 
   function backToMenu() {
@@ -19,25 +14,15 @@ export default function GalleryImages() {
 
   return (
     <Container>
-      <h1>Galeria de fotos</h1>
+      <h1>PRODUTOS QUE PRECISO</h1>
       <img src={Header} alt="Logo Header" />
       <br />
-      <h5>Seja bem vindo a minha galeria de fotos!</h5>
+      <h5>“A cegonha está chegando! E para comemorar com muita alegria este momento, mamãe e papai convidam você para meu chá de bebê.”</h5>
 
-      <h5>
-        "Tudo começou com minha mãe passando muito enjoo, então decidiram fazer
-        o teste de farmácia, foi ai que souberam que o chefinho estava a caminha..."
-      </h5>
+     
       <img className="galeria1" src={pezinho} alt="Logo Header" />
 
-      <img className="galeria1" src={hcg} alt="Logo Header" />
-
-      <img className="galeria1" src={ultrassom} alt="Logo Header" />
-
-      <img className="galeria1" src={ultrassom2} alt="Logo Header" />
-
-      <img className="galeria1" src={agradecimento} alt="Logo Header" />
-
+      
       <br />
       <br />
 
